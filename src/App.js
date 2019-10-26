@@ -6,6 +6,9 @@ import Navbar from './NavbarComponent/NavbarComponent';
 import Login from './LoginComponent/LoginComponent'; 
 import Register from './RegisterComponent/RegisterComponent';
 import UserInput from './UserInputComponent/UserInputComponent';
+import Package from './PackagesComponent/PackagesComponent';
+import Member from './MembersCountComponent/MembersCountComponent';
+import Budget from './BudgetComponent/BudgetComponent.js';
 
 class App extends Component {
   render() {
@@ -17,7 +20,10 @@ class App extends Component {
           {/* <Login /> */}
           <Route path="/register" component={Register}/>
           <Route path="/login" component={Login}/>
-          <UserInput/>
+          {/* <UserInput/> */}
+          {/* <Package/> */}
+          {/* <Member/> */}
+          {/* <Budget/> */}
         </div>
       </BrowserRouter>  
     );

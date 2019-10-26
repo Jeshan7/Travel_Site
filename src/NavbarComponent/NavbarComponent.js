@@ -8,7 +8,7 @@ import SignedOut from './SignedOutComponent.js';
 const navbar = () => {
     return (
         <div>
-            <Navbar bg="info" expand="lg">
+            <Navbar className="Navbar" bg="info" expand="lg">
                 <Navbar.Brand>Travel</Navbar.Brand> 
                 <SignedIn />
                 <SignedOut />

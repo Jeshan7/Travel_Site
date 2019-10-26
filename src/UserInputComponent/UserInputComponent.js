@@ -1,5 +1,7 @@
 import React from 'react';
-import { Form, Button, Container } from 'react-bootstrap';  
+import Calendar from 'react-calendar';
+import { Form, Button, Container, Row, Col } from 'react-bootstrap';  
+
 
 const userInput = () => {
 
@@ -17,12 +19,13 @@ const userInput = () => {
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Number of days</Form.Label>
-                <Form.Control type="text" id="daysCount" placeholder="Number of days"></Form.Control>
-            </Form.Group>
-            
+                <Form.Label>From</Form.Label>
+                <Form.Control type="text" id="from" placeholder="From"></Form.Control>
+            </Form.Group> 
+
             <Button variant="outline-primary" type="submit">Search</Button>
-          </Form>    
+          </Form>
+          <Calendar/>
         </Container>
       </div>
   );

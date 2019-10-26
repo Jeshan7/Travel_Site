@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LoginComponent.css';
 import { Form, Container, Button } from 'react-bootstrap';
 
 
@@ -23,18 +24,18 @@ class Login extends Component {
     render() {
         return(
           <div>
-            <Container> 
-              <Form onSubmit={this.handleSubmit}>  
+            <Container className="Login"> 
+              <Form onSubmit={this.handleSubmit} className="loginForm">  
                 <Form.Group>
-                    <Form.Label> Email </Form.Label>
+                    {/* <Form.Label> Email </Form.Label> */}
                     <Form.Control type="text" id="email" placeholder="Enter Email" onChange={this.inputHandler}></Form.Control>
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label> Password </Form.Label>  
+                    {/* <Form.Label> Password </Form.Label>   */}
                     <Form.Control type="password" id="password" placeholder="Password" onChange={this.inputHandler}></Form.Control>
                 </Form.Group>
-                <Button variant="outline-primary" type="submit"> LogIn</Button>
+                <Button id="btnLogin" variant="outline-primary" type="submit"> LogIn</Button>
               </Form>
             </Container>    
           </div> 
