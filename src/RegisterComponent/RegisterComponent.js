@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './RegisterComponent.css';
+import fire from '../config/Firebase.js';
 import { Container, Form, Button } from 'react-bootstrap';
+import { firestore } from 'firebase';
 
 
-class Register extends Component {
+class Register extends Component { 
     state = {
         name: null,
         email: null,
@@ -14,8 +16,18 @@ class Register extends Component {
     
     handleSubmit = (e) => {
       e.preventDefault(); 
-      console.log(this.state);
-      
+      // console.log(this.state);
+      fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+        .then( cred => {
+          return fire.firestore().collection('Users').doc(cred.user.uid).set({
+                   name: this.state.name,
+                   phone: this.state.phoneNo,
+                   repeatPassword: this.state.repeatPassword
+          });
+          // console.log(cred.user.uid);    
+      }).catch( err =>  {
+          console.log(err);
+      });
     }
     
     inputHandler = (e) => {
