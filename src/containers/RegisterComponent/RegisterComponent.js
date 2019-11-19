@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './RegisterComponent.css';
-import fire from '../config/Firebase.js';
+import fire from '../../config/Firebase.js';
 import { Container, Form, Button } from 'react-bootstrap';
 import { firestore } from 'firebase';
 
@@ -23,11 +23,11 @@ class Register extends Component {
                    name: this.state.name,
                    phone: this.state.phoneNo,
                    repeatPassword: this.state.repeatPassword
-          });
-          // console.log(cred.user.uid);    
+          });    
       }).catch( err =>  {
           console.log(err);
       });
+      this.props.history.push("/home");
     }
     
     inputHandler = (e) => {

@@ -14,13 +14,16 @@
 #email {
     width: 50%;
     margin-left: 110px;
+    border-radius: 2px; 
 }
 
 #password {
     width: 50%;
     margin-left: 110px;
+    border-radius: 2px; 
 }
 
 #btnLogin {
     margin-right: 30px;
+    border-radius: 2px; 
 }

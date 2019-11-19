@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import fire from './config/Firebase.js';
-import Navbar from './NavbarComponent/NavbarComponent';
+import fire from '../config/Firebase.js';
+import Navbar from '../components/NavbarComponent/NavbarComponent';
 import Login from './LoginComponent/LoginComponent'; 
 import Register from './RegisterComponent/RegisterComponent';
-import UserInput from './UserInputComponent/UserInputComponent';
-import Package from './PackagesComponent/PackagesComponent';
-import Member from './MembersCountComponent/MembersCountComponent';
-import Budget from './BudgetComponent/BudgetComponent.js';
+import Home from '../components/UserInputComponent/UserInputComponent';
+import Package from '../components/PackagesComponent/PackagesComponent';
+import Member from '../components/MembersCountComponent/MembersCountComponent';
+import Budget from '../BudgetComponent/BudgetComponent.js';
 
 class App extends Component {
   state = {
@@ -36,11 +36,11 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          {/* <h1>hello</h1> */}
-          <Navbar isUser={ this.state.user }/>
-          {/* <Login /> */}
+        {/* userEmail={this.state.user.email} */}
+          <Navbar isUser={ this.state.user } />
           <Route path="/register" component={Register}/>
           <Route path="/login" component={Login}/>
+          <Route path="/home" component={Home}/>
           {/* <UserInput/> */}
           {/* <Package/> */}
           {/* <Member/> */}

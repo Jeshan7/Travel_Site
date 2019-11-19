@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LoginComponent.css';
-import fire from '../config/Firebase.js';
+import fire from '../../config/Firebase.js';
 import { Form, Container, Button } from 'react-bootstrap';
 
 
@@ -15,6 +15,7 @@ class Login extends Component {
       fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
         .then( cred => {
             console.log(cred.user.email);
+            this.props.history.push("/home");
         }).catch( err => {
              console.log(err);
         })

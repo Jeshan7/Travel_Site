@@ -9,18 +9,23 @@
 #name {
     width: 50%;
     margin-left: 110px;
+    border-radius: 2px;
+    
 }
 
 #phoneNo {
     width: 50%;
     margin-left: 110px;
+    border-radius: 2px;
 }
 
 #repeatPassword {
     width: 50%;
     margin-left: 110px;
+    border-radius: 2px;
 }
 
 #btnRegister {
     margin-right: 30px;
+    border-radius: 2px;
 }

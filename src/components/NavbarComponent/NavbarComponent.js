@@ -2,8 +2,8 @@ import React from 'react';
 import './NavbarComponent.css';
 import { Navbar } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
-import SignedIn from './SignedInComponent.js';
-import SignedOut from './SignedOutComponent.js';
+import SignedIn from './SignedInComponent';
+import SignedOut from './SignedOutComponent';
 
 const navbar = (props) => {
 
@@ -20,15 +20,11 @@ const navbar = (props) => {
         <div>
             <Navbar className="Navbar" bg="info" expand="lg">
                 <Navbar.Brand>Travel</Navbar.Brand> 
-                {/* <SignedIn /> */}
-                {/* <SignedOut /> */}
                 {signedInLinks}
                 {signedOutLinks}
-                {/* {props} */}
-                {/* <Nav className="mr-auto">
-                    <Nav.Link href="/register">Register</Nav.Link>
-                    <Nav.Link href="/login">Login</Nav.Link>
-                </Nav>   */}
+                <Navbar.Text>
+                  { props.isUser ? "Signed in as: " + props.userEmail : null }   
+                </Navbar.Text>
             </Navbar>
         </div>
     );

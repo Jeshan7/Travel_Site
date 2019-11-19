@@ -1,0 +1,18 @@
+.Navbar {
+  height: 80px;
+}
+
+.adiv {
+  background-color: gray;
+}
+
+#signin-btn {
+  border: none;
+  border-radius: 2px;
+  color: black;
+}
+
+#signin-link {
+  text-decoration: none;
+  color: black;
+}

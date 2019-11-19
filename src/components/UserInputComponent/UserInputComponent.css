@@ -1,0 +1,27 @@
+.UserContainer {
+  font-family: sans-serif;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.uForm {
+  width: 400px;
+  margin-left: 350px;
+}
+
+#city {
+  border-radius: 2px;    
+}
+
+#duration {
+  border-radius: 2px;    
+}
+
+#month {
+  border-radius: 2px;    
+}
+
+#user-btn {
+  margin-right: 20px;
+  border-radius: 2px; 
+}
