@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendar from 'react-calendar';
-import './UserInputComponent.css';
+import './UserInput.css';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';  
 
 
@@ -8,6 +8,7 @@ const userInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(this.props); 
   }
 
   return (

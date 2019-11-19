@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import fire from '../config/Firebase.js';
-import Navbar from '../components/NavbarComponent/NavbarComponent';
-import Login from './LoginComponent/LoginComponent'; 
-import Register from './RegisterComponent/RegisterComponent';
-import Home from '../components/UserInputComponent/UserInputComponent';
-import Package from '../components/PackagesComponent/PackagesComponent';
-import Member from '../components/MembersCountComponent/MembersCountComponent';
+import Navbar from '../components/Navbar/Navbar';
+import Login from './Login/Login'; 
+import Register from './Register/Register';
+import Home from '../components/UserInput/UserInput';
+import Package from '../components/Packages/Packages';
+import Member from '../components/MembersCount/MembersCount';
 import Budget from '../BudgetComponent/BudgetComponent.js';
+import Errors from '../components/SiteErrors/Errors';
 
 class App extends Component {
   state = {
-    user: {}
+    user: {},
   }
   
   componentDidMount() {
@@ -33,15 +34,17 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <BrowserRouter>
         <div className="App">
-        {/* userEmail={this.state.user.email} */}
-          <Navbar isUser={ this.state.user } />
-          <Route path="/register" component={Register}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/home" component={Home}/>
-          {/* <UserInput/> */}
+          { this.state.user ? <Navbar isUser={ this.state.user } userEmail={ this.state.user.email }/> 
+              : <Navbar isUser={ this.state.user }/> }
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/register" component={Register}/>
+            <Route path="/login" component={Login}/>
+          </Switch>
           {/* <Package/> */}
           {/* <Member/> */}
           {/* <Budget/> */}

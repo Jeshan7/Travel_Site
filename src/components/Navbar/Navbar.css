@@ -7,12 +7,19 @@
 }
 
 #signin-btn {
-  border: none;
-  border-radius: 2px;
+  border: none; 
   color: black;
+  margin-left: 750px;
+  padding: 10px;
 }
 
 #signin-link {
   text-decoration: none;
   color: black;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+#nav-text {
+  padding: 10px;
 }

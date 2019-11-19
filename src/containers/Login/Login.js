@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import './LoginComponent.css';
+import './Login.css';
 import fire from '../../config/Firebase.js';
 import { Form, Container, Button } from 'react-bootstrap';
+import Errors from "../../components/SiteErrors/Errors";
 
 
 class Login extends Component {
     state = {
         email: null,
-        password: null
+        password: null,
+        errors: ""
     }
     
     handleSubmit = (e) => {
@@ -15,9 +17,9 @@ class Login extends Component {
       fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
         .then( cred => {
             console.log(cred.user.email);
-            this.props.history.push("/home");
+            this.props.history.push("/");
         }).catch( err => {
-             console.log(err);
+            this.setState({ errors: err.message });
         })
     }
     
@@ -28,9 +30,18 @@ class Login extends Component {
     }
 
     render() {
+        
+      let message = null;
+        if(this.state.errors) {
+          message = (
+            <Errors errMessage = {this.state.errors}/>    
+          );
+      }
+
         return(
           <div>
             <Container className="Login"> 
+              { message }  
               <Form onSubmit={this.handleSubmit} className="loginForm">  
                 <Form.Group>
                     {/* <Form.Label> Email </Form.Label> */}
@@ -43,7 +54,7 @@ class Login extends Component {
                 </Form.Group>
                 <Button id="btnLogin" variant="outline-primary" type="submit"> LogIn</Button>
               </Form>
-            </Container>    
+            </Container>  
           </div> 
         );
     }
