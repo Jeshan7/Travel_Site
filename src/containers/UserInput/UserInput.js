@@ -3,7 +3,6 @@ import Calendar from 'react-calendar';
 import './UserInput.css';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';  
 
-
 const userInput = (props) => {
 
   const [destination, setDestination] = useState(null);

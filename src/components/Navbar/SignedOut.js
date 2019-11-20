@@ -8,8 +8,8 @@ const signedOut = () => {
     return (
       <div>
         <Nav className="mr-auto">  
-          <NavLink id="signin-link" to="/login">Login</NavLink>
-          <NavLink id="signin-link" to="/register">Register</NavLink>
+          <NavLink className="link" to="/login">Login</NavLink>
+          <NavLink className="link" to="/register">Register</NavLink>
         </Nav>
       </div>
     );

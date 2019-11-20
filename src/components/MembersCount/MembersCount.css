@@ -1,0 +1,73 @@
+.Members {
+  font-family: sans-serif;
+  text-align: center;
+  width: 750px;
+  margin-top: 200px;    
+}
+
+.card-members {
+  border: 100px;    
+}
+
+#adults {
+  width: 100px;
+  text-align: center;
+  margin-left: 56px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+#children {
+  width: 100px;
+  text-align: center;
+  margin-left: 56px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px
+}
+
+#infants {
+  width: 100px;
+  text-align: center;
+  margin-left: 56px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px
+}
+
+#members-btn {
+  border: 1px solid #3498db;
+  background: none;
+  border-radius: 1px;
+  margin-top: 40px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden; 
+  outline: none;
+}
+
+#members-btn:hover {
+  color: #fff;
+}
+
+
+Button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+#members-btn::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+#members-btn:hover::before {
+  height: 180%;
+}

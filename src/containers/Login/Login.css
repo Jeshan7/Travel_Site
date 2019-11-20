@@ -14,16 +14,60 @@
 #email {
     width: 50%;
     margin-left: 110px;
-    border-radius: 2px; 
+    border-radius: 1px;
+    border-bottom: 2px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+}
+
+#email:focus {
+  outline: none;
 }
 
 #password {
     width: 50%;
     margin-left: 110px;
     border-radius: 2px; 
+    border-bottom: 2px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
 }
 
 #btnLogin {
     margin-right: 30px;
     border-radius: 2px; 
+    border: 1px solid #3498db;
+    background: none;
+    border-radius: 1px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden; 
+    outline: none;
+}
+
+#members-btn:hover {
+    color: #fff;
+  }
+  
+  
+Button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+  
+#btnLogin::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+  
+#btnLogin:hover::before {
+  height: 180%;
 }

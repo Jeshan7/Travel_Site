@@ -1,5 +1,6 @@
 .Navbar {
   height: 80px;
+  font-family: sans-serif;
 }
 
 .adiv {
@@ -13,13 +14,26 @@
   padding: 10px;
 }
 
-#signin-link {
-  text-decoration: none;
+.link {
+  /* text-decoration: none; */
+  font-family: sans-serif;
+  font-size: 18px;
   color: black;
-  margin-left: 50px;
+  margin-left: 20px;
   padding: 5px;
+  display: inline;
+}
+
+.link:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  color: aliceblue;
+}
+.active {
+  color: aliceblue; 
 }
 
 #nav-text {
   padding: 10px;
 }
+

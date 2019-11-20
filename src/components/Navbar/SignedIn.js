@@ -3,7 +3,7 @@ import React from 'react';
 import fire from '../../config/Firebase.js';
 import "./Navbar.css";
 import { Nav, Button } from 'react-bootstrap';  
-import { Link, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 const signedIn = (props) => {
   
@@ -17,7 +17,7 @@ const signedIn = (props) => {
   return (
       <div>
         <Nav className="mr-auto">  
-          <Link id="signin-link" to="/">Home</Link>
+          <NavLink className="link" to="/">Home</NavLink>
           <Button id="signin-btn" variant="outline-info" onClick={logoutHandler}>Log Out</Button>
         </Nav>
       </div>

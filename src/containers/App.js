@@ -9,7 +9,7 @@ import Register from './Register/Register';
 import Home from './UserInput/UserInput';
 import Package from '../components/Packages/Packages';
 import Member from '../components/MembersCount/MembersCount';
-import Budget from '../BudgetComponent/BudgetComponent.js';
+import Budget from '../components/Budget/Budget';
 import Errors from '../components/SiteErrors/Errors';
 
 class App extends Component {
@@ -48,9 +48,9 @@ class App extends Component {
             <Route path="/budget" component={Budget}/>
             <Route path="/packages" component={Package}/>
           </Switch>
-          {/* <Package/>
-          <Member/>
-          <Budget/> */}
+          {/* <Package/> */}
+          {/* <Member/> */}
+          {/* <Budget/> */}
         </div>
       </BrowserRouter>  
     );

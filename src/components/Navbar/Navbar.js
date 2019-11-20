@@ -23,8 +23,8 @@ const navbar = (props) => {
               <Navbar.Brand href="/">
               <img
                 src= {logo}
-                width="40"
-                height="40"
+                width="50"
+                height="50"
                 className="d-inline-block align-top"
                 alt="React Bootstrap logo"
               />
