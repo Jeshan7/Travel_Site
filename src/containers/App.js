@@ -6,7 +6,7 @@ import fire from '../config/Firebase.js';
 import Navbar from '../components/Navbar/Navbar';
 import Login from './Login/Login'; 
 import Register from './Register/Register';
-import Home from '../components/UserInput/UserInput';
+import Home from './UserInput/UserInput';
 import Package from '../components/Packages/Packages';
 import Member from '../components/MembersCount/MembersCount';
 import Budget from '../BudgetComponent/BudgetComponent.js';
@@ -44,10 +44,13 @@ class App extends Component {
             <Route path="/" exact component={Home}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
+            <Route path="/members" component={Member}/>
+            <Route path="/budget" component={Budget}/>
+            <Route path="/packages" component={Package}/>
           </Switch>
-          {/* <Package/> */}
-          {/* <Member/> */}
-          {/* <Budget/> */}
+          {/* <Package/>
+          <Member/>
+          <Budget/> */}
         </div>
       </BrowserRouter>  
     );

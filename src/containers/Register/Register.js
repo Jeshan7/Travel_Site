@@ -13,6 +13,18 @@ class Register extends Component {
         repeatPassword: null,
         errors: ""
     }
+
+    // Validation = () => {
+      
+    //   let emailReg = /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/igm;
+      
+    //   if(!emailReg.test(this.state.email)){
+    //     console.log("error");
+    //   } else {
+    //     console.log("no error");
+        
+    //   }
+    //   } 
     
     handleSubmit = (e) => {
       e.preventDefault(); 

@@ -14,6 +14,7 @@ class Login extends Component {
     
     handleSubmit = (e) => {
       e.preventDefault();
+      
       fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
         .then( cred => {
             console.log(cred.user.email);
@@ -28,6 +29,19 @@ class Login extends Component {
           [e.target.id]: e.target.value
       })
     }
+    
+    // googleAuthHandler = () => {
+    //   // console.log(fire.auth.GoogleAuthProvider());
+      
+    //   let provider = new fire.auth.GoogleAuthProvider();
+    //   fire.auth().signInWithPopup(provider)
+    //   .then( (result) => {
+    //     console.log(result);
+        
+    //   }).catch( err => {
+    //     console.log(err);
+    //   })
+    // }
 
     render() {
         
@@ -52,8 +66,11 @@ class Login extends Component {
                     {/* <Form.Label> Password </Form.Label>   */}
                     <Form.Control type="password" id="password" placeholder="Password" onChange={this.inputHandler}></Form.Control>
                 </Form.Group>
+
                 <Button id="btnLogin" variant="outline-primary" type="submit"> LogIn</Button>
-              </Form>
+              
+              </Form> 
+              {/* <Button id="btn-google" variant="outline-primary" onClick={this.googleAuthHandler}> Google </Button> */}
             </Container>  
           </div> 
         );
