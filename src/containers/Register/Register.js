@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Register.css';
 import fire from '../../config/Firebase.js';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Image } from 'react-bootstrap';
 import Errors from "../../components/SiteErrors/Errors";
 
 class Register extends Component { 
@@ -59,9 +59,10 @@ class Register extends Component {
       }
 
       return(
-        <div>
-          <Container className="registerContainer">
+        <div className = "Register">
+          <Container className="register-container">
             { message }
+            <h1 id="header"> Sign Up </h1> 
             <Form onSubmit={this.handleSubmit}>
               <Form.Group>
                   <Form.Control type="text" id="name" placeholder="Name" onChange={this.inputHandler}></Form.Control>
@@ -82,7 +83,7 @@ class Register extends Component {
               <Form.Group>
                   <Form.Control type="password" id="repeatPassword" placeholder="Repeat Password" onChange={this.inputHandler}></Form.Control>
               </Form.Group>
-              <Button id="btnRegister" variant="outline-primary" type="submit">Register</Button>
+              <Button id="btn-register" variant="outline-primary" type="submit">Sign Up</Button>
             </Form>
           </Container>
         </div>

@@ -1,0 +1,54 @@
+.Slide1 {
+  height: 400px;
+  background-color: white; 
+  margin-top: 100px;   
+}
+
+.Slide2 {
+  height: 400px;
+  background-color: black;    
+}
+
+.Slide3 {
+  height: 400px;
+  background-color: white;    
+}  
+
+.Slide4 {
+    height: 400px;
+    background-color: black;    
+}
+
+.column-1 {
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../../assets/images/taj.jpg);
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.column-2 {
+  height: 200px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../../assets/images/goi.jpg);
+  background-size: cover;
+  margin-top: 100px;
+}
+
+/* .collon-open {
+  margin-right: 850px;
+  font-size: 100px;
+}
+
+.collon-close {
+  margin-right: 850px;
+  font-size: 100px;
+} */
+
+.quote {
+  /* margin-top: 100px; */
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}

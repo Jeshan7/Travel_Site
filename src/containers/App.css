@@ -1,3 +1,11 @@
 .App {
   text-align: center;
+  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/taj.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/taj1.jpg);
+  /* background-color: #38B8E8; */
+  height: 130vh;  
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-sizing: border-box;
 }

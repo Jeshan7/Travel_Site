@@ -19,7 +19,7 @@ const navbar = (props) => {
     
     return (
         <div>
-            <Navbar className="Navbar" bg="info" expand="lg">
+            <Navbar className="Navbar" expand="lg">
               <Navbar.Brand href="/">
               <img
                 src= {logo}

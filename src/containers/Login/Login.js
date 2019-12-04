@@ -56,6 +56,7 @@ class Login extends Component {
         <div>
           <Container className="Login"> 
             { message }  
+            <h1 className="header-in"> Sign In </h1>
             <Form onSubmit={this.handleSubmit} className="loginForm">  
               <Form.Group>
                   {/* <Form.Label> Email </Form.Label> */}
@@ -67,7 +68,7 @@ class Login extends Component {
                   <Form.Control type="password" id="password" placeholder="Password" onChange={this.inputHandler}></Form.Control>
               </Form.Group>
 
-              <Button id="btnLogin" variant="outline-primary" type="submit"> LogIn</Button>
+              <Button id="btn-login" variant="outline-primary" type="submit"> Sign In</Button>
             
             </Form> 
             {/* <Button id="btn-google" variant="outline-primary" onClick={this.googleAuthHandler}> Google </Button> */}

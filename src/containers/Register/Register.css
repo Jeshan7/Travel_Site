@@ -1,73 +1,73 @@
-.registerContainer {
-    /* border: 1px solid black; */
-    /* background-color: blue; */
-    width: 500px;
-    height: 450px;
-    margin-top: 100px;
+.register-container {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  width: 360px;
+  height: 500px;
+  margin: auto;
+  margin-top: 23px;
+  background: white;
+  border-radius: 0px;
+  /* box-shadow: -5px 5px 30px black; */
+}
+
+#header {
+  margin: auto;
+  margin-top: 35px;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
 #name {
-    width: 50%;
-    margin-left: 110px;
-    border-radius: 2px;
-    border-bottom: 2px solid gray;
-    border-top: none;
-    border-left: none;
-    border-right: none; 
+  width: 250px;
+  margin: auto;
+  border-radius: 1px;
+  margin-top: 50px;
+  box-shadow: none;
+  border-radius: 0px;
+  background: none;
 }
 
 #phoneNo {
-    width: 50%;
-    margin-left: 110px;
-    border-radius: 2px;
-    border-bottom: 2px solid gray;
-    border-top: none;
-    border-left: none;
-    border-right: none; 
+  width: 250px;
+  margin: auto;
+  border-radius: 1px;
+  box-shadow: none;
+  outline: none;
+  border-radius: 0px;
+  background: none;
 }
 
 #repeatPassword {
-    width: 50%;
-    margin-left: 110px;
-    border-radius: 2px;
-    border-bottom: 2px solid gray;
-    border-top: none;
-    border-left: none;
-    border-right: none; 
+  width: 250px;
+  margin: auto;
+  border-radius: 1px;
+  box-shadow: none;
+  border-radius: 0px;
+  background: none;
 }
 
-#btnRegister {
-    margin-right: 30px;
-    border: 1px solid #3498db;
-    background: none;
-    border-radius: 1px;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden; 
-    outline: none;
+#btn-register {
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: none;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 1px;
+  transition: 0.4s;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  box-shadow: none;
 }
 
-#btnRegister:hover {
-    color: #fff;
-  }
-  
-  
-Button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #3498db;
-  z-index: -1;
-  transition: 0.8s;
-}
-  
-#btnRegister::before {
-  top: 0;
-  border-radius: 0 0 50% 50%;
-}
-  
-#btnRegister:hover::before {
-  height: 180%;
+#btn-register:hover {
+  /* background-color: white;
+  color: black; */
+  color: #404040;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
 }

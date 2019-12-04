@@ -9,8 +9,11 @@ import Register from './Register/Register';
 import Home from './UserInput/UserInput';
 import Package from '../components/Packages/Packages';
 import Member from '../components/MembersCount/MembersCount';
-import Budget from '../components/Budget/Budget';
+// import Budget from '../components/Budget/Budget';
 import Errors from '../components/SiteErrors/Errors';
+import Slide1 from '../components/Information/slide1';
+import Slide2 from '../components/Information/slide2';
+import Slide3 from '../components/Information/slide3';
 
 class App extends Component {
   state = {
@@ -45,12 +48,15 @@ class App extends Component {
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
             <Route path="/members" component={Member}/>
-            <Route path="/budget" component={Budget}/>
+            {/* <Route path="/budget" component={Budget}/> */}
             <Route path="/packages" component={Package}/>
           </Switch>
           {/* <Package/> */}
           {/* <Member/> */}
           {/* <Budget/> */}
+          <Slide1/>
+          <Slide2/>
+          <Slide3/>
         </div>
       </BrowserRouter>  
     );
