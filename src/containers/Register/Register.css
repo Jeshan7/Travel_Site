@@ -17,33 +17,36 @@
   font-weight: 900;
 }
 
+.register-form {
+  position: relative;
+  top: 45px;
+}
+
 #name {
   width: 250px;
   margin: auto;
-  border-radius: 1px;
-  margin-top: 50px;
-  box-shadow: none;
-  border-radius: 0px;
-  background: none;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 #phoneNo {
   width: 250px;
   margin: auto;
-  border-radius: 1px;
-  box-shadow: none;
-  outline: none;
-  border-radius: 0px;
-  background: none;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 #repeatPassword {
   width: 250px;
   margin: auto;
-  border-radius: 1px;
-  box-shadow: none;
-  border-radius: 0px;
-  background: none;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 #btn-register {

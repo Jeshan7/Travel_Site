@@ -8,10 +8,12 @@
   letter-spacing: 0.2px;
   font-size: 17px;
   color: black;
-  position: relative;
-  left: 1000px;
+  position: absolute;
+  left: 1070px;
+  top: 25px;
   padding: 5px;
   display: inline-block;
+  margin: 2px;  
 }
 
 .link-register {
@@ -19,10 +21,13 @@
   letter-spacing: 0.2px;
   font-size: 17px;
   color: black;
-  position: relative;
-  left: 1020px;
+  position: absolute;
+  left: 1150px;
   padding: 5px;
   display: inline;
+  margin: 2px;
+  top: 25px;
+  /* border: 2px solid white; */
 }
 
 .link-home {
@@ -30,9 +35,9 @@
   letter-spacing: 0.2px;
   font-size: 17px;
   color: black;
-  position: relative;
-  left: 30px;
-  padding: 5px;
+  position: absolute;
+  left: 100px;
+  top: 25px;
   display: inline;
 }
 
@@ -63,12 +68,12 @@
 .logout-btn {
   border: none; 
   color: black;
-  position: relative;
-  bottom: 4px;
-  left: 1000px;
+  position: absolute;
+  left: 1150px;
   border: 1px solid white;
   border-radius: 0px;
   color: white;
+  top: 25px;
   transition: 0.4s;
 }
 
@@ -79,7 +84,8 @@
 }
 
 .nav-text {
-  position: relative;
-  left: 300px;
+  position: absolute;
+  left: 522px;
+  top: 25px;
   border-bottom: 2px solid white;
 }

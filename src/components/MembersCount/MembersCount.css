@@ -9,14 +9,14 @@
   background-color: white;   
 }
 
-.card-members {
+/* .card-members {
   margin: auto;
   position: relative;
   top: 35px;
   border: 100px;    
-}
+} */
 
-.adults {
+/* .adults {
   width: 100px;
   text-align: center;
   margin-left: 56px;
@@ -41,13 +41,14 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 30px
-}
+} */
 
 .members-btn  {
   margin: auto;
   position: relative;
-  top: 55px;
-  border-radius: 2px; 
+  top: 110px;
+  right: 228px;
+  border-radius: 0px; 
   background-color: black;
   color: white;
   border: 1px solid black;
@@ -65,4 +66,25 @@
   background: none;
   box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.6s ease 0s;  
+}
+
+.adult {
+  border-radius: 0px; 
+  width: 200px; 
+  height: 100px;
+  display: inline-block;
+}
+
+.children {
+  border-radius: 0px; 
+  width: 200px; 
+  height: 100px;
+  display: inline-block;
+}
+
+.infants {
+  border-radius: 0px; 
+  width: 200px; 
+  height: 100px;
+  display: inline-block;
 }

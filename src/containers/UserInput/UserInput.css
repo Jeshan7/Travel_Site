@@ -17,33 +17,39 @@
 }
 
 .destination {
-  border-radius: 1px;  
   width: 250px;
   margin: auto;
-  margin-top: 20px;
-  box-shadow: none;
-  background: none;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .city {
-  border-radius: 2px;  
   width: 250px;
-  margin: auto;  
-  box-shadow: none;
+  margin: auto;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .duration {
-  border-radius: 2px; 
   width: 250px;
-  margin: auto; 
-  box-shadow: none;
+  margin: auto;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .month {
-  border-radius: 2px; 
   width: 250px;
-  margin: auto; 
-  box-shadow: none;
+  margin: auto;
+  border-radius: 0px; 
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .user-btn {

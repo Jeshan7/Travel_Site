@@ -16,7 +16,7 @@ const MembersCount = (props) => {
   return (
     <div>
       <Container className="Members">
-        <CardDeck  className="card-members">
+        {/* <CardDeck  className="card-members">
           <Card>
             <Card.Header>Adults</Card.Header>
             <FormControl type="number" className="adults" placeholder="0" min={0} onChange={e => setAdultCount(e.target.value)}/>
@@ -31,7 +31,10 @@ const MembersCount = (props) => {
             <Card.Header>Infants</Card.Header>
             <FormControl type="number" className="infants" placeholder="0" min={0} onChange={e => setInfantCount(e.target.value)} />
           </Card>
-        </CardDeck>
+        </CardDeck> */}
+        <FormControl type="number" className="adults" placeholder="0" />
+        <FormControl type="number" className="children" placeholder="0" />
+        <FormControl type="number" className="infants" placeholder="0" />
         <Button className="members-btn" variant="outline-primary" onClick={inputHandler}> Next </Button>
       </Container>
     </div>

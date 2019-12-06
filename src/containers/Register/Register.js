@@ -63,7 +63,7 @@ class Register extends Component {
           <Container className="register-container">
             { message }
             <h1 id="header"> Sign Up </h1> 
-            <Form onSubmit={this.handleSubmit}>
+            <Form className="register-form" onSubmit={this.handleSubmit}>
               <Form.Group>
                   <Form.Control type="text" id="name" placeholder="Name" onChange={this.inputHandler}></Form.Control>
               </Form.Group>
