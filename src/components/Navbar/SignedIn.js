@@ -17,8 +17,8 @@ const signedIn = (props) => {
   return (
       <div>
         <Nav className="mr-auto">  
-          <NavLink className="link" to="/">Home</NavLink>
-          <Button id="signin-btn" variant="outline-info" onClick={logoutHandler}>Log Out</Button>
+          <NavLink className="link-home" to="/">Home</NavLink>
+          <Button className="logout-btn" variant="outline-info" onClick={logoutHandler}>Log Out</Button>
         </Nav>
       </div>
   );

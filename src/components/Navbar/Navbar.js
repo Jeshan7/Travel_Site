@@ -31,7 +31,7 @@ const navbar = (props) => {
               </Navbar.Brand> 
                 {signedInLinks}
                 {signedOutLinks}
-              <Navbar.Text id="nav-text">
+              <Navbar.Text className="nav-text">
                 { props.isUser ? "Signed in as: " + props.userEmail : null }   
               </Navbar.Text>
               {/* <Navbar.Footer>

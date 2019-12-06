@@ -19,20 +19,20 @@ const MembersCount = (props) => {
         <CardDeck  className="card-members">
           <Card>
             <Card.Header>Adults</Card.Header>
-            <FormControl type="number" id="adults" placeholder="0" min={0} onChange={e => setAdultCount(e.target.value)}/>
+            <FormControl type="number" className="adults" placeholder="0" min={0} onChange={e => setAdultCount(e.target.value)}/>
           </Card>
 
           <Card>
             <Card.Header>Children</Card.Header>
-            <FormControl type="number" id="children" placeholder="0" min={0} onChange={e => setChildCount(e.target.value)} />
+            <FormControl type="number" className="children" placeholder="0" min={0} onChange={e => setChildCount(e.target.value)} />
           </Card>
           
           <Card>
             <Card.Header>Infants</Card.Header>
-            <FormControl type="number" id="infants" placeholder="0" min={0} onChange={e => setInfantCount(e.target.value)} />
+            <FormControl type="number" className="infants" placeholder="0" min={0} onChange={e => setInfantCount(e.target.value)} />
           </Card>
         </CardDeck>
-        <Button id="members-btn" variant="outline-primary" onClick={inputHandler}> Next </Button>
+        <Button className="members-btn" variant="outline-primary" onClick={inputHandler}> Next </Button>
       </Container>
     </div>
   );

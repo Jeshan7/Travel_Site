@@ -17,37 +17,37 @@ const userInput = (props) => {
 
   return (
       <div>
-        <Container className="UserContainer">
-          <Form className="uForm" onSubmit={handleSubmit}>
+        <Container className="User">
+          <Form className="input-form" onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Control type="text" 
-                            id="destination"
+                            className="destination"
                             placeholder="Type the destination"
                             onChange={(e) => setDestination(e.target.value) } />
             </Form.Group>
 
             <Form.Group>
               <Form.Control type="text" 
-                            id="city"
+                            className="city"
                             placeholder="From"
                             onChange={(e) => setCity(e.target.value) } />
             </Form.Group>
 
             <Form.Group>
               <Form.Control type="text" 
-                            id="duration"
+                            className="duration"
                             placeholder="Select Duration" 
                             onChange={(e) => setDuration(e.target.value) } />
             </Form.Group> 
             
             <Form.Group>
               <Form.Control type="text"
-                            id="month"
+                            className="month"
                             placeholder="Select Month"
                             onChange={(e) => setMonth(e.target.value) } />
             </Form.Group> 
 
-            <Button id="user-btn" variant="outline-primary" type="submit">Search</Button>
+            <Button className="user-btn" variant="outline-primary" type="submit">Search</Button>
           </Form>
           {/* <Calendar/> */}
         </Container>

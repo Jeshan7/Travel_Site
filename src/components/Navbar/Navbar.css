@@ -3,38 +3,83 @@
   font-family: sans-serif;
 }
 
-.adiv {
-  background-color: gray;
-}
-
-#signin-btn {
-  border: none; 
-  color: black;
-  margin-left: 750px;
-  padding: 10px;
-}
-
-.link {
-  float: right;
+.link-login {
   font-family: sans-serif;
   letter-spacing: 0.2px;
   font-size: 17px;
-  color: white;
-  margin-left: 20px;
+  color: black;
+  position: relative;
+  left: 1000px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.link-register {
+  font-family: sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  left: 1020px;
   padding: 5px;
   display: inline;
 }
 
-.link:hover {
+.link-home {
+  font-family: sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  left: 30px;
+  padding: 5px;
+  display: inline;
+}
+
+.link-login:hover {
   text-decoration: none;
   transition: 0.3s;
-  color: black;
+  color: white;
 }
+
+.link-register:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+
+.link-home:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+
 .active {
-  color: black; 
+  color: white; 
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
 }
 
-#nav-text {
-  padding: 10px;
+.logout-btn {
+  border: none; 
+  color: black;
+  position: relative;
+  bottom: 4px;
+  left: 1000px;
+  border: 1px solid white;
+  border-radius: 0px;
+  color: white;
+  transition: 0.4s;
 }
 
+.logout-btn:hover {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.nav-text {
+  position: relative;
+  left: 300px;
+  border-bottom: 2px solid white;
+}
